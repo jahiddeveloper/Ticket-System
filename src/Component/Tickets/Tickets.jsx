@@ -11,9 +11,9 @@ const Tickets = ({ fetchTickets }) => {
         <div className="col-span-9 mx-2 md:mx-0">
           <h1>Customer Tickets</h1>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {
-                ticketData.map(ticket => <TicketCard ticket = {ticket}></TicketCard>)
-            }
+            {ticketData.map((ticket) => (
+              <TicketCard ticket={ticket}></TicketCard>
+            ))}
           </div>
         </div>
 
